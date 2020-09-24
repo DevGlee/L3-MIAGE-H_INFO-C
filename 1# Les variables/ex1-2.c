@@ -1,20 +1,22 @@
 #include <stdio.h>
+#include <stdlib.h>
 
  int main() {
 
-int e , c, d;
+int e ; 
+float c;
 
-printf("Entrer votre argent en euros");
+printf("Entrer votre argent en euros\n");
 
-scanf("%d\n", &e);
+scanf("%d", &e);
 
-printf("Conversion !");
+printf("Conversion !\n");
 
 c= e*0.92;
 
-d=c;
 
-printf("Vous avez %d dollars\n", &d);
+
+printf("Vous avez %f dollars\n", c);
 
 
 
