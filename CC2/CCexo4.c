@@ -1,15 +1,15 @@
 #include <stdio.h>
  
-void inverse(char *p, int debut, int fin)
+void inverse(char *pointeur, int debut, int fin)
 {
    char ch;
    if (debut >= fin)
       return;
  
-   ch = *(p+debut);
-   *(p+debut) = *(p+fin);
-   *(p+fin) = ch;
-   inverse(p, ++debut, --fin);
+   ch = *(pointeur+debut);
+   *(pointeur+debut) = *(pointeur+fin);
+   *(pointeur+fin) = ch;
+   inverse(pointeur, ++debut, --fin);
 }
  
 int main()
